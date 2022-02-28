@@ -1,0 +1,11 @@
+digraph G {
+  node[shape=box]
+  "thread 1" [pos = "0,.5!", shape=none]
+  "thread 2" [pos = "1,.5!", shape=none]
+  "0:X" [pos = "0,0!"]
+  "1:X" [pos = "1,-1!"]
+  "2:X" [pos = "0,-2!"]
+  "0:X" -> "2:X" [ label="po", color=red ]
+  "0:X" -> "1:X" [ label="com" ]
+  "1:X" -> "2:X" [ label="com" ]
+}
